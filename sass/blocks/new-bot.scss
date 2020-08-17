@@ -1,0 +1,40 @@
+@import "../variables";
+
+.new-bot {
+    max-width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
+        position: absolute;
+        box-sizing: border-box;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 2px solid $blue;
+        opacity: 0.5;
+        border-radius: 4px;
+        z-index: -1;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        cursor: pointer;
+        @media (max-width: 1291px) {
+            flex-direction: column;
+        }
+    }
+    span {
+        font-family: SF-Pro-Display-Regular;
+        font-size: 21px;
+        color: $blue;
+        margin-left: 16px;
+        @media (max-width: 1291px) {
+            margin-top: 5px;
+            text-align: center;
+        }
+    }
+}

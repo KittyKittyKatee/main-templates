@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "variables";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: 'SF-Pro-Display-Regular', 'Helvetica', 'Arial', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	background-color: $bg;
+}
+
+.title-1 {
+    font-family: SF-Pro-Display-Semibold;
+    font-size: 32px;
+    color: $black;
+    margin-bottom: 30px;
+}
+
+.title-3 {
+    font-family: SF-Pro-Display-Bold;
+    font-size: 21px;
+    line-height: normal;
+    color: $black;
+    margin: 0;
+    margin-bottom: 10px;
+}

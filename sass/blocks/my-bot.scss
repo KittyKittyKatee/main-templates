@@ -1,0 +1,95 @@
+@import "../variables";
+
+.my-bot {
+    max-width: 100%;
+    padding: 18px 16px 24px;
+    height: 115px;
+    box-sizing: border-box;
+    background-color: $white;
+    border-radius: 4px;
+    border: 1px solid $gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    &__title {
+        margin-bottom: 10px;
+        @media (max-width: 1291px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.social {
+    height: 32px;
+    display: flex;
+    div {
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        border: solid 2px $gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            border-color: darken($gray, 5)
+        }
+    }
+}
+
+.actions {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    z-index: 10;
+    &__hide {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover span{
+            background-color: darken($dark-gray, 15)
+        }
+        span {
+            height: 4px;
+            width: 4px;
+            border-radius: 4px;
+            margin-bottom: 3px;
+            background-color: $dark-gray;
+        }
+    }
+    &__open {
+        position: absolute;
+        top: -6px;
+        right: 13px;
+        width: 57px;
+        height: 30px;
+        box-shadow: 0 18px 42px 0 rgba(114, 120, 135, 0.1), 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+        background-color: $dark-gray;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 6px;
+            width: 6px;
+            background-color: $dark-gray;
+            transform: rotate(45deg);
+            top: 41%;
+            right: -3px;
+            transform: translateX(-41%, 0);
+        }
+        div {
+            cursor: pointer;
+            &:first-child {
+                margin-right: 12px;
+            }
+        }
+    }
+}

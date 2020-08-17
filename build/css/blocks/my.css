@@ -1,0 +1,15 @@
+.my {
+  margin-top: 40px; }
+  .my__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 21px; }
+    @media (max-width: 1300px) {
+      .my__content {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media (max-width: 980px) {
+      .my__content {
+        grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      .my__content {
+        grid-template-columns: 1fr; } }

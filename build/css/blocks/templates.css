@@ -1,0 +1,17 @@
+.templates {
+  margin-top: 40px;
+  max-width: 1784px; }
+  .templates__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 21px; }
+    @media (max-width: 1300px) {
+      .templates__content {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media (max-width: 980px) {
+      .templates__content {
+        grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      .templates__content {
+        grid-template-columns: 1fr; } }
